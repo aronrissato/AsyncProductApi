@@ -1,6 +1,8 @@
 ## Rider
 .idea/
 .idea/*
+*.db-shm
+*.db-wal
 
 
 ## Ignore Visual Studio temporary files, build results, and

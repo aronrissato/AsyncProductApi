@@ -24,7 +24,7 @@ app.MapPost("api/v1/products", async (AppDbContext dbContext, ListingRequest req
     await dbContext.ListingRequests.AddAsync(request);
     await dbContext.SaveChangesAsync();
     
-    return Results.Accepted($"api/v1/productStatus/{request.RequestId}", request);
+    return Results.Accepted($"api/v1/productstatus/{request.RequestId}", request);
 });
 
 app.Run();
